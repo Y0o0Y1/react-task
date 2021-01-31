@@ -2,20 +2,19 @@
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     display:inline;
-    padding: 15px;
+    padding: 15px ;
     flex-basis:100%;
     align-self: flex-end;
-
+    font-weight: 900;
 }
 ul{
     align-items: center;
     display: flex;
     justify-content: center;
     max-height: 1rem;
-
 }
 .List-item{
-    padding:20px;
+    padding:20px 3rem;
     display: inline;
     list-style: none;
 }

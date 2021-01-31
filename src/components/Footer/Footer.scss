@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:space-around;
+
+    background-color: rgb(151, 0, 0);
+}
+//ss
+.footer-section{
+    display: inline;
+}

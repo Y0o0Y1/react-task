@@ -1,0 +1,17 @@
+.itemDescription{
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.itemDescription h1{
+    font-size: large;
+    padding: 2rem;
+
+}
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+}

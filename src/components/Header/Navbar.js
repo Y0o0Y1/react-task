@@ -1,11 +1,14 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import "./Navbar.scss"
+import Dropdown from "../Dropdown/Dropdown"
+
 const Navbar = ({items,text}) => {
+  
     return (
             <nav className ="Navbar">
             <ul>
                 {items.map(item =>{
-                    return <li className = "List-item">{item}</li>
+                    return <li className = "List-item">{item} </li>
                 })}
             </ul>
         </nav>        
