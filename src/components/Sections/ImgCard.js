@@ -8,7 +8,8 @@ const ImgCard = ({imgSrc,imgTitle ,imgId}) => {
         <div className="card">
          <Link to={`/${imgId}`} >
             <img className="img-card" src={imgSrc} alt=" "></img>
-            <h3>{imgTitle}</h3>
+            <h3>Image Number {imgId}</h3>
+
         </Link>
         </div>
     )

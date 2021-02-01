@@ -3,7 +3,7 @@ import "./ItemDescription.scss"
 import data from "../DummyData.json"
 import {useRouteMatch} from "react-router-dom"
 const ItemDescription = () => {
-  const arrayOFpics = data.slice(0,20)
+  const arrayOFpics = data.slice(0,100)
   let {url}=useRouteMatch()
   const currentImg = arrayOFpics[url.slice(1)-1]
   return (
