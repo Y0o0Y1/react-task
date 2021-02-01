@@ -4,6 +4,8 @@ import Services from "./components/Services"
 import { BrowserRouter as Router , Switch,Route} from "react-router-dom"
 import ItemDescription from "./components/Item-Description/ItemDescription"
 import Footer from "./components/Footer/Footer"
+import Features from "./components/Features/Features"
+
 
 function App() {
   return (
@@ -17,8 +19,10 @@ function App() {
             <Route path="/:id" exact component={ItemDescription}/>
           </Switch>  
       </Router>
+      <Features/>
       </div>
       <Footer/>
+
     </div>
   );
 }

@@ -3,13 +3,11 @@ import FooterText from "./FooterText"
 import "./Footer.scss"
 const Footer = () => {
     return (
-        <div className="footer">
-            <footer>
-                <FooterText text="Weds360"/>
-                <FooterText text="Weds360"/>
-                <FooterText text="Weds360"/>
-            </footer>
-        </div>
+        <footer className="footer">
+           <FooterText text="Weds360"/>
+           <FooterText text="Weds360"/>
+           <FooterText text="Weds360"/>
+        </footer>
     )
 }
 
