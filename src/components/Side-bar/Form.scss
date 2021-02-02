@@ -1,8 +1,55 @@
+.form{
+    margin-top: 15px;
+    padding-left: 6px;
+    display: grid;
+    grid-area:form;
+}
 .input-field{
     display: block;
-    padding: 5px;
-    margin : 20px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 form button{
-    margin:20px 20px 20px 20px;
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 21px;
+}
+
+.buttonWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.clear-btn{
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #000;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 21px;
+ 
+}
+
+.apply-btn{
+    border: solid 1px #000;
+    width: 55px;
+    height: 21px;
+    margin-left: 3px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+
+}
+
+@media(max-width:377px){
+    .form{
+     justify-content: center;
+    }
+
 }

@@ -13,16 +13,15 @@ function App() {
     <div className="container">
       <Router>
         <Header/>
-        <h3>GALLERY</h3>
-        <Switch>
-            <Route path="/" exact component={Services}/>
-            <Route path="/:id" exact component={ItemDescription}/>
-          </Switch>  
+          <h3>GALLERY</h3>
+          <Switch>
+              <Route path="/" exact component={Services}/>
+              <Route path="/:id" exact component={ItemDescription}/>
+            </Switch>  
       </Router>
       <Features/>
       </div>
       <Footer/>
-
     </div>
   );
 }

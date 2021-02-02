@@ -6,15 +6,12 @@ import Pagination from "./Pagination/Pagination"
 import axios from 'axios';
 const Services = () => {
     const [photos,setPhotos]=useState([])
-    const [loading, setLoading] = useState(false);
     const [currentPage,setCurrentPage]=useState(1)
-    const [photosPerPage]=useState(14)
+    const [photosPerPage]=useState(9)
     useEffect(() => {
         const fetchPhotos = async () => {
-          setLoading(true);
           const res = await axios.get('https://jsonplaceholder.typicode.com/photos');
           setPhotos(res.data.slice(0,100));
-          setLoading(false);
         };
         fetchPhotos();
       }, []);
@@ -25,10 +22,12 @@ const Services = () => {
     const currentPhotos = photos.slice(indexOfFirstPhoto,indexOfLastPhoto)
     const paginate = pageNumber => setCurrentPage(pageNumber);
     return (
-        <div className="services container">
-            <Form/>
+        <div className="container">
+        <div className="services">            
+          <Form/>
             <Gallery photos={currentPhotos}/>
-            <Pagination photosPerPage={photosPerPage} totalPhotos={photos.length} paginate={paginate}/>
+            <Pagination className="pagination" photosPerPage={photosPerPage} totalPhotos={photos.length} paginate={paginate}/>
+            </div>
         </div>
     )
 }

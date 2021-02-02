@@ -9,7 +9,6 @@ const Pagination = ({photosPerPage,totalPhotos,paginate}) => {
         pageNumbers.push(i)
     }
     return (
-        <nav>
             <ul className="pagination">
                 {pageNumbers.map(number=>{
                     return <li key={number} className="page-item">
@@ -19,7 +18,6 @@ const Pagination = ({photosPerPage,totalPhotos,paginate}) => {
                         </li>
                 })}
             </ul>
-        </nav>
     )
 }
 

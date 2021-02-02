@@ -1,7 +1,23 @@
 .services{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-content: center;
+    grid-template-areas: 
+    "form gallery"
+    ". pagination";
+}
+
+@media(max-width:376px){
+    .services{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "form"
+        "gallery"
+        "pagination";
+    }
+    .form{
+        margin-bottom: 20px;
+    }
+
 }
