@@ -4,6 +4,7 @@ import Form from "./Side-bar/Form"
 import Gallery from "./Sections/Gallery"
 import Pagination from "./Pagination/Pagination"
 import axios from 'axios';
+
 const Services = () => {
     const [photos,setPhotos]=useState([])
     const [currentPage,setCurrentPage]=useState(1)
